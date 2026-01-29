@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+#Reporte, #Peticion{
+  padding: 17px 40px;
+  border-radius: 10px;
+  border: 0;
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;;
+}
+
+#Reporte{
+    background-color: hsl(213, 96%, 18%);
+}
+#Reporte:hover{
+    background-color: hsl(213, 96%, 25%);
+}
+#Peticion{
+    background-color: hsl(141, 53%, 53%);
+}
+#Peticion:hover{
+    background-color: hsl(249, 77%, 42%);
+}
+
+
+.buttons_section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    height: 80%;
+    width: 95%;
+}
+
+button:hover {
+  box-shadow: rgb(203, 202, 202) 0px 7px 0px 0px;
+}
+
+button:active {
+  background-color: rgb(255, 56, 86);
+  /*50, 168, 80*/
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
