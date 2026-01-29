@@ -11,5 +11,31 @@
         <button id="Reporte">Reporte</button>
         <button id="Peticion">Peticion</button>
     </div>
+    <div id="reportContainer" class="report-container" aria-hidden="true">
+        <form id="reportForm" class="report-panel">
+            <h2>Enviar Reporte</h2>
+            <label for="username">Usuario</label>
+            <input id="username" name="username" type="text" placeholder="Tu usuario">
+
+            <label for="reason">Categoria</label>
+            <select id="reason" name="reason">
+                <option value="bug">Canal</option>
+                <option value="spam">Serie</option>
+                <option value="other">Pelicula</option>
+            </select>
+
+            <label for="issue">Nombre del problema</label>
+            <input id="issue" name="issue" type="text" placeholder="Breve título del problema">
+
+            <label>Imagen (placeholder)</label>
+            <div class="image-placeholder">Área para imagen (próximamente)</div>
+
+            <div class="actions">
+                <button type="button" id="cancelReport">Cancelar</button>
+                <button type="submit" id="submitReport">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>

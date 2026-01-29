@@ -40,18 +40,76 @@ h1{
     flex-direction: column;
     gap: 10px;
     margin: 10px;
-    height: 80%;
-    width: 95%;
+    align-items: center;
 }
 
 button:hover {
-  box-shadow: rgb(203, 202, 202) 0px 7px 0px 0px;
+  box-shadow: rgb(202, 203, 202) 0px 7px 0px 0px;
 }
 
 button:active {
-  background-color: rgb(255, 56, 86);
-  /*50, 168, 80*/
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
+    transform: translateY(4px);
+}
+
+/* Report panel styles */
+.report-container{
+    display: flex;
+    justify-content: center;
+    margin: 16px;
+}
+.report-panel{
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+.report-panel h2{
+    margin-bottom: 6px;
+}
+.report-panel label{
+    font-size: 14px;
+    margin-top: 6px;
+}
+.report-panel input[type="text"],
+.report-panel select{
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+.image-placeholder{
+    height: 80px;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+.report-panel .actions{
+    display:flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 8px;
+}
+.report-panel .actions button{
+    padding: 8px 14px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.report-panel .actions #cancelReport{
+    background: #eee;
+}
+.report-panel .actions #submitReport{
+    background: hsl(213, 96%, 18%);
+    color: white;
+}
+.report-panel.show{
+    display: flex;
 }
